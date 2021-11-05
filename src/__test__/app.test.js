@@ -5,14 +5,12 @@ import Character from '../js/character';
 
 test('character name length test', () => {
   expect(() => {
-    /* eslint-disable no-new */
     new Character('1', 'Magician');
   }).toThrow(new Error('incorrect name length'));
 });
 
 test('character type test', () => {
   expect(() => {
-    /* eslint-disable no-new */
     new Character('test1', 'incorrectType');
   }).toThrow(new Error('type not found'));
 });

@@ -1,11 +1,12 @@
 export default class Character {
   constructor(name, type) {
-    this.setCharInformation();
-    this.name = name;
-    this.type = type;
     this.defaultType = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
     this.health = 100;
     this.level = 1;
+
+    this.setCharInformation();
+    this.name = name;
+    this.type = type;
   }
 
   set name(value) {
